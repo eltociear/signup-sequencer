@@ -37,6 +37,7 @@ abigen!(
         function setRootHistoryExpiry(uint256 newExpiryTime) public virtual
         function verifyProof(uint256 root, uint256 signalHash, uint256 nullifierHash, uint256 externalNullifierHash, uint256[8] calldata proof) public view virtual
         function owner() public view virtual returns (address)
+        function identityOperator() public view virtual returns (address)
         function renounceOwnership() public virtual
         function transferOwnership(address newOwner) public virtual
         function proxiableUUID() external view virtual override returns (bytes32)
